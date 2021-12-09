@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import {GetRequestComponent} from "./get-request.component";
 import { FormsModule } from '@angular/forms';
+import { CatalogComponent } from './catalog/catalog.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module'; // CLI imports AppRoutingModule
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetRequestComponent
+    GetRequestComponent,
+    CatalogComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

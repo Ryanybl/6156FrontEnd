@@ -1,0 +1,18 @@
+<h1>Products</h1>
+<div [innerHtml]="catalog"></div>
+<h2>Create new product</h2>
+Name: <input  [(ngModel)]="create_name"><br>
+Price: <input  [(ngModel)]="create_price"><br>
+Content: <input  [(ngModel)]="create_content"><br>
+<button type="submit" (click)="createProduct()" class="btn btn-primary mb-2">Create</button>
+
+<h2>Update existing product</h2>
+Id: <input  [(ngModel)]="update_id"><br>
+Name: <input  [(ngModel)]="update_name"><br>
+Price: <input  [(ngModel)]="update_price"><br>
+Content: <input  [(ngModel)]="update_content"><br>
+<button type="submit" (click)="updateProduct()" class="btn btn-primary mb-2">Update</button>
+
+<h2>Delete product</h2>
+Id: <input  [(ngModel)]="delete_id"><br>
+<button type="submit" (click)="deleteProduct()" class="btn btn-primary mb-2">Delete</button>
